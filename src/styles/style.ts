@@ -7,7 +7,7 @@ export const MainContainerHome = styled.div`
 
 export const ContainerHome = styled.div`
   width: 100%;
-  height: 1279px;
+  height: 1320px;
   background: white;
 `;
 
@@ -35,6 +35,11 @@ export const Footer = styled.footer`
 width: 100%;
 height: 50px;
 background: #252F3D;
+
+@media (max-width: 740px) {
+  height: 65px;
+  padding-top: 10px;
+}
 `;
 
 
@@ -42,6 +47,7 @@ export const GeneralContainer = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
+overflow-x: hidden;
 `;
 
 export const ContainericonHeader = styled.div`
@@ -50,6 +56,10 @@ export const ContainericonHeader = styled.div`
   gap: 5px;
   margin-top: 5px;
   align-items: center;
+
+  @media (max-width: 740px) {
+    display: none;
+  }
 `;
 
 export const TextHeader = styled.p`
@@ -67,10 +77,19 @@ export const ContainerLogos = styled.div`
   display: flex;
   gap: 65%;
   align-items: center;
+
+  @media (max-width: 740px) {
+    gap: 55%;
+  }
 `;
 
 export const ContainerClarifionLogo = styled.div`
   margin-left: 2%;
+
+  @media (max-width: 740px) {
+    width: 10px;
+    height: 10px;
+  }
 `;
 
 export const ContainerNortonSecureLogo = styled.div`
@@ -81,6 +100,8 @@ export const ContainerNortonSecureLogo = styled.div`
 export const ContainerTitle = styled.div`
   display: flex;
   justify-content: center;
+
+  
 `;
 
 export const ContainerH1 = styled.h1`
@@ -91,6 +112,11 @@ font-style: normal;
 font-weight: 400;
 line-height: 100%; /* 48px */
 text-transform: capitalize;
+
+@media (max-width: 740px) {
+    text-align: center;
+    font-size: 32px;
+  }
 `;
 
 export const ContainerSubTitle = styled.div`
@@ -107,6 +133,20 @@ font-style: normal;
 font-weight: 400;
 line-height: 100%; /* 24px */
 text-transform: capitalize;
+
+@media (max-width: 740px) {
+    text-align: center;
+    color: #4D5254;
+width: 80%;
+text-align: center;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+text-transform: capitalize;
+margin-top: 3%;
+  }
 `;
 
 export const ContainerSteps = styled.div`
@@ -114,6 +154,11 @@ export const ContainerSteps = styled.div`
   flex-direction: row;
   justify-content: center;
   gap: 10px;
+
+  @media (max-width: 740px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const ContainerStepsNumber = styled.p`
@@ -126,14 +171,23 @@ line-height: 110%; /* 22px */
 text-transform: capitalize;
 display: flex;
 
+@media (max-width: 740px) {
+    font-size: 10px;
+  };
+
 span {
     color: #000;
 font-family: Manrope;
 font-size: 20px;
 font-style: normal;
-font-weight: 700;
+font-weight: 100;
 line-height: 110%; /* 22px */
 text-transform: capitalize;
+
+@media (max-width: 740px) {
+    display: none;
+    
+  };
 }
 `;
 
@@ -147,6 +201,7 @@ export const MainContainersteps = styled.div`
   justify-content: center;
   gap: 8%;
   margin-top: 5%;
+
 `;
 
 export const BigContainerHome = styled.div`
@@ -173,6 +228,10 @@ export const ContainerInfoHome = styled.div`
 
 export const ContainerImg = styled.div`
   margin-left: 5%;
+
+  @media (max-width: 740px) {
+    display: none;
+  }
 `;
 
 export const ContainerTitleImg = styled.h2`
@@ -185,6 +244,12 @@ line-height: 140%; /* 44.8px */
 text-transform: capitalize;
 width: 85%;
 
+@media (max-width: 740px) {
+    font-size: 24px;
+    text-align: center;
+    margin-left: 5%;
+  }
+
 span {
     color: #000;
 font-family: Manrope;
@@ -193,6 +258,9 @@ font-style: normal;
 font-weight: 400;
 line-height: 140%;
 text-transform: capitalize;
+@media (max-width: 740px) {
+    font-size: 24px;
+  }
 }
 `;
 
@@ -206,10 +274,19 @@ export const MiniContainerIMg = styled.div`
  width: 134px;
 height: 134px;
 border-radius: 10px;
+
+@media (max-width: 740px) {
+width: 80px;
+height: 80px;
+  }
 `;
 
 export const ContainerIMgTwo = styled.img`
   
+@media (max-width: 740px) {
+width: 80px;
+height: 80px;
+  }
 `;
 
 export const ContainerSectionInfo = styled.div`
@@ -224,6 +301,10 @@ font-style: normal;
 font-weight: 400;
 line-height: 140%; /* 28px */
 text-transform: capitalize;
+
+@media (max-width: 740px) {
+    font-size: 14px;
+  }
 `;
 
 export const ContainerNumersTitle = styled.span`
@@ -235,6 +316,10 @@ font-weight: 600;
 line-height: normal;
 text-decoration-line: strikethrough;
 text-transform: capitalize;
+
+@media (max-width: 740px) {
+    font-size: 14px;
+  }
 `;
 
 export const ContainerNumersTitle2 = styled.span`
@@ -245,6 +330,10 @@ font-style: normal;
 font-weight: 600;
 line-height: 140%; /* 30.8px */
 text-transform: capitalize;
+
+@media (max-width: 740px) {
+    font-size: 14px;
+  }
 `;
 
 export const SubContainerNumbers = styled.div`
@@ -281,6 +370,13 @@ font-weight: 400;
 line-height: 140%; /* 22.4px */
 margin-top: 2%;
 width: 85%;
+
+@media (max-width: 740px) {
+  width: auto;
+  margin-top: 10%;
+  margin-left: -100px;
+  text-align: center;
+}
 `;
 
 export const ContainerTickText = styled.div`
@@ -348,6 +444,12 @@ border-radius: 50px;
 background: #59AE43;
 margin-top: 3%;
 width: 70%;
+
+@media (max-width: 740px) {
+    font-size: 14px;
+    width: 60%;
+    height: 35px;
+  }
 `;
 
 export const ButtonButton = styled.div`
@@ -358,6 +460,10 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 text-transform: uppercase;
+
+@media (max-width: 740px) {
+    font-size: 14px;
+  }
 `;
 
 export const ContainerBoxCard = styled.div`
@@ -449,6 +555,10 @@ background: #FFF;
 margin-left: 5%;
 width: 85%;
 margin-top: 5%;
+
+@media (max-width: 740px) {
+    display: none;
+  }
 `;
 
 export const ContainerImgFace = styled.img`
@@ -505,6 +615,12 @@ export const ContainerTextFooter = styled.div`
   gap: 45%;
   align-items: center;
   margin-top: 1%;
+
+  @media (max-width: 740px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 
 export const ContainerTextTwoFooter = styled.div`
@@ -527,4 +643,24 @@ font-style: normal;
 font-weight: 400;
 line-height: 140%; /* 22.4px */
 text-transform: capitalize;
+
+@media (max-width: 740px) {
+  font-size: 12px;
+}
+`;
+
+export const ContainerIconHeaderMobile = styled.div`
+  display: none;
+
+  @media (max-width: 740px) {
+    display: flex;
+    margin-top: 5px;
+  align-items: center;
+  }
+  
+`;
+
+export const ContainerMainSectionClarifion = styled.div`
+display: flex;
+gap: 10%;
 `;

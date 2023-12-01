@@ -12,7 +12,7 @@ import image4 from '../img/image4.png';
 import image6 from '../img/image6.png';
 import Rectangle from '../img/Rectangle.png';
 import imagepreview from '../img/imagepreview.png';
-import { BigContainerHome, ButtonButton, ButtonYes, ContainerBigImgText, ContainerBox, ContainerBoxCard, ContainerClarifionLogo, ContainerFooter, ContainerH1, ContainerH2, ContainerHeader, ContainerHome, ContainerIMgTwo, ContainerImg, ContainerImgEnd, ContainerImgFace, ContainerImgTextEnd, ContainerInfoHome, ContainerLastText, ContainerLogos, ContainerMiniTitle, ContainerName, ContainerNortonSecureLogo, ContainerNumersTitle, ContainerNumersTitle2, ContainerPointBlueText, ContainerSectionInfo, ContainerSpace, ContainerSpanName, ContainerSpanText, ContainerSpanVerify, ContainerStar, ContainerStarSmall, ContainerSteps, ContainerStepsNumber, ContainerStyledText, ContainerSubName, ContainerSubTitle, ContainerTextEnd, ContainerTextFooter, ContainerTextRectangle, ContainerTextThreeFooter, ContainerTextTwoFooter, ContainerTextbig, ContainerTextpoint, ContainerTextred, ContainerTickText, ContainerTitle, ContainerTitleImg, ContainericonHeader, ContainericonStep, Footer, GeneralContainer, Header, ImgHome, MainContainerHome, MainContainersteps, MiniContainerIMg, MiniSectionImg, StyledText, SubContainerNumbers, TextFooterSpan, TextHeader } from "../styles/style.ts";
+import { BigContainerHome, ButtonButton, ButtonYes, ContainerBigImgText, ContainerBox, ContainerBoxCard, ContainerClarifionLogo, ContainerFooter, ContainerH1, ContainerH2, ContainerHeader, ContainerHome, ContainerIMgTwo, ContainerIconHeaderMobile, ContainerImg, ContainerImgEnd, ContainerImgFace, ContainerImgTextEnd, ContainerInfoHome, ContainerLastText, ContainerLogos, ContainerMainSectionClarifion, ContainerMiniTitle, ContainerName, ContainerNortonSecureLogo, ContainerNumersTitle, ContainerNumersTitle2, ContainerPointBlueText, ContainerSectionInfo, ContainerSpace, ContainerSpanName, ContainerSpanText, ContainerSpanVerify, ContainerStar, ContainerStarSmall, ContainerSteps, ContainerStepsNumber, ContainerStyledText, ContainerSubName, ContainerSubTitle, ContainerTextEnd, ContainerTextFooter, ContainerTextRectangle, ContainerTextThreeFooter, ContainerTextTwoFooter, ContainerTextbig, ContainerTextpoint, ContainerTextred, ContainerTickText, ContainerTitle, ContainerTitleImg, ContainericonHeader, ContainericonStep, Footer, GeneralContainer, Header, ImgHome, MainContainerHome, MainContainersteps, MiniContainerIMg, MiniSectionImg, StyledText, SubContainerNumbers, TextFooterSpan, TextHeader } from "../styles/style.ts";
 import Star from "../img/svg/star.tsx";
 import PointBlue from "../img/svg/pointBlue.tsx";
 import TickCircle from "../img/svg/tickCircle.tsx";
@@ -33,6 +33,10 @@ function Home() {
     <GeneralContainer >
       <ContainerHeader>
         <Header>
+          <ContainerIconHeaderMobile>
+            <CheckHeader />
+            <TextHeader>30-DAY SATISFACTION GUARANTEE</TextHeader>
+          </ContainerIconHeaderMobile>
           <ContainericonHeader>
             <CheckHeader />
             <TextHeader>30-DAY SATISFACTION GUARANTEE</TextHeader>
@@ -77,7 +81,7 @@ function Home() {
               <CheckGreen />
             </ContainericonStep>
             <ContainerStepsNumber>
-              Step 1 : Cart Review
+              <span>Step 1 : </span>Cart Review
             </ContainerStepsNumber>
           </ContainerSteps>
 
@@ -86,7 +90,7 @@ function Home() {
               <CheckGreen />
             </ContainericonStep>
             <ContainerStepsNumber>
-              Step 2 : Checkout
+              <span>Step 2 :</span> Checkout
             </ContainerStepsNumber>
           </ContainerSteps>
 
@@ -95,7 +99,7 @@ function Home() {
               <CircleBlue/>
             </ContainericonStep>
             <ContainerStepsNumber>
-              <span>Step 3 : Special Offer</span>
+              <span>Step 3 : </span>Special Offer
             </ContainerStepsNumber>
           </ContainerSteps>
 
@@ -104,7 +108,7 @@ function Home() {
               <CircleWhite />
             </ContainericonStep>
             <ContainerStepsNumber>
-              Step 4 : Confirmation
+              <span>Step 4 : </span>Confirmation
             </ContainerStepsNumber>
           </ContainerSteps>
           </MainContainersteps>
@@ -142,13 +146,13 @@ function Home() {
                     <ContainerIMgTwo src={imagepreview}></ContainerIMgTwo>
                   </MiniContainerIMg>
                   <ContainerSectionInfo>
-                    <div style={{display: 'flex', gap: '90px'}}>
+                    <ContainerMainSectionClarifion>
                       <ContainerMiniTitle>Clarifion Air Ionizer</ContainerMiniTitle>
                       <SubContainerNumbers>
                         <ContainerNumersTitle>$180</ContainerNumersTitle>
                         <ContainerNumersTitle2>$84</ContainerNumersTitle2>
                       </SubContainerNumbers>
-                    </div>
+                    </ContainerMainSectionClarifion>
                     <ContainerStar>
                       <Star />
                       <Star />
@@ -225,7 +229,7 @@ function Home() {
 
       <ContainerFooter>
         <Footer>
-        <ContainerTextFooter>
+          <ContainerTextFooter>
             <ContainerTextTwoFooter>
               <TextFooterSpan>Copyright (c) 2023</TextFooterSpan>
               <span>|</span>

@@ -1,8 +1,19 @@
 import React from "react";
+import styled from "styled-components";
+
+const StyledCircle = styled.svg`
+  width: 88px;
+  height: 32px;
+
+  @media only screen and (max-width: 740px) {
+    width: 44px;
+    height: 20px;
+  }
+`;
 
 export default function SecureLogo() {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="88" height="32" viewBox="0 0 88 32" fill="none">
+        <StyledCircle xmlns="http://www.w3.org/2000/svg" width="88" height="32" viewBox="0 0 88 32" fill="none">
   <path d="M15.2579 32C15.2579 32 -1.85272 26.1496 0.165459 2.21607C5.07928 0.886427 10.1686 0.0886427 15.2579 0C20.435 0.0886427 25.5243 0.797784 30.4381 2.21607C32.4563 26.0609 15.2579 32 15.2579 32Z" fill="url(#paint0_linear_1_24)"/>
   <path d="M15.2579 32C15.2579 32 -1.85272 26.1496 0.165459 2.21607C5.07928 0.886427 10.1686 0.0886427 15.2579 0C20.435 0.0886427 25.5243 0.797784 30.4381 2.21607L28.8587 3.63435L15.2579 30.4931V32Z" fill="url(#paint1_linear_1_24)"/>
   <path d="M15.2579 30.4931C15.2579 30.4931 -0.185525 25.1745 1.56941 3.45706C6.0445 2.21606 10.6073 1.50692 15.2579 1.41827C19.9085 1.50692 24.5591 2.21606 29.0342 3.45706C30.7891 25.0859 15.2579 30.4931 15.2579 30.4931Z" fill="white" stroke="black" stroke-width="0.515" stroke-linecap="round"/>
@@ -73,6 +84,6 @@ export default function SecureLogo() {
       <stop offset="1" stop-color="#8A193F"/>
     </linearGradient>
   </defs>
-</svg>
+</StyledCircle>
     );
   }
