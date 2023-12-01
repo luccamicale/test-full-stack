@@ -6,9 +6,9 @@ export const MainContainerHome = styled.div`
 `;
 
 export const ContainerHome = styled.div`
-  width: 90%;
-  height: auto;
-  background: whitesmoke;
+  width: 100%;
+  height: 1279px;
+  background: white;
 `;
 
 export const ContainerHeader = styled.div`
@@ -17,7 +17,7 @@ export const ContainerHeader = styled.div`
 `;
 
 export const Header = styled.header`
-width: 90%;
+width: 100%;
 height: 50px;
 background: #252F3D;
 display: flex;
@@ -32,7 +32,7 @@ export const ContainerFooter = styled.div`
 `;
 
 export const Footer = styled.footer`
-width: 90%;
+width: 100%;
 height: 50px;
 background: #252F3D;
 `;
@@ -66,6 +66,7 @@ export const ContainerLogos = styled.div`
   margin-top: 3%;
   display: flex;
   gap: 65%;
+  align-items: center;
 `;
 
 export const ContainerClarifionLogo = styled.div`
@@ -152,11 +153,11 @@ export const BigContainerHome = styled.div`
 border-radius: 10px;
 background: #FAFAFA;
 width: 92%;
-height: 700px;
+height: 879px;
 display: flex;
 flex-direction: row;
 margin-top: 3%;
-gap: 3%;
+gap: 1%;
 `;
 
 export const ImgHome = styled.img`
@@ -386,4 +387,144 @@ align-items: center;
 export const ContainerSpace = styled.div`
   width: 8px;
 height: 24px;
+`;
+
+export const ContainerTextred = styled.div`
+  color: #F82C2C;
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration-line: underline;
+text-transform: uppercase;
+display: flex;
+justify-content: center;
+margin-top: 6%;
+`;
+
+export const ContainerImgTextEnd = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  width: 93%;
+  margin-top: 4%;
+`;
+
+export const ContainerImgEnd = styled.img`
+  
+`;
+
+export const ContainerTextEnd = styled.span`
+  color: #4D5254;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+
+span {
+  color: #4D5254;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%;
+}
+`;
+
+export const ContainerBigImgText = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ContainerLastText = styled.div`
+  display: flex;
+width: 575px;
+padding: 24px;
+align-items: flex-start;
+gap: 18px;
+border-radius: 10px;
+background: #FFF;
+margin-left: 5%;
+width: 85%;
+margin-top: 5%;
+`;
+
+export const ContainerImgFace = styled.img`
+  width: 48px;
+height: 48px;
+`;
+
+export const ContainerStarSmall = styled.div`
+  
+`;
+
+export const ContainerName = styled.div`
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  width: 200px;
+`;
+
+export const ContainerSubName = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ContainerSpanName = styled.span`
+  color: #333;
+font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 14px */
+`;
+
+export const ContainerSpanVerify = styled.span`
+color: #5BB59A;
+font-family: Manrope;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 14.4px */
+`;
+
+export const ContainerTextRectangle = styled.div`
+  color: #4D5254;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+margin-top: 5%;
+`;
+
+export const ContainerTextFooter = styled.div`
+  display: flex;
+  gap: 45%;
+  align-items: center;
+  margin-top: 1%;
+`;
+
+export const ContainerTextTwoFooter = styled.div`
+  margin-left: 5%;
+  display: flex;
+  gap: 15px;
+`;
+
+export const ContainerTextThreeFooter = styled.div`
+  display: flex;
+  gap: 12px;
+  align-items: center;
+`;
+
+export const TextFooterSpan = styled.span`
+ color: #FFF;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+text-transform: capitalize;
 `;

@@ -9,8 +9,10 @@ import NortonLogo from "../img/svg/norton.tsx";
 import SecureLogo from "../img/svg/secureLogo.tsx";
 import TruckHeader from "../img/svg/truck.tsx";
 import image4 from '../img/image4.png';
+import image6 from '../img/image6.png';
+import Rectangle from '../img/Rectangle.png';
 import imagepreview from '../img/imagepreview.png';
-import { BigContainerHome, ButtonButton, ButtonYes, ContainerBox, ContainerBoxCard, ContainerClarifionLogo, ContainerFooter, ContainerH1, ContainerH2, ContainerHeader, ContainerHome, ContainerIMgTwo, ContainerImg, ContainerInfoHome, ContainerLogos, ContainerMiniTitle, ContainerNortonSecureLogo, ContainerNumersTitle, ContainerNumersTitle2, ContainerPointBlueText, ContainerSectionInfo, ContainerSpace, ContainerSpanText, ContainerStar, ContainerSteps, ContainerStepsNumber, ContainerStyledText, ContainerSubTitle, ContainerTextbig, ContainerTextpoint, ContainerTickText, ContainerTitle, ContainerTitleImg, ContainericonHeader, ContainericonStep, Footer, GeneralContainer, Header, ImgHome, MainContainerHome, MainContainersteps, MiniContainerIMg, MiniSectionImg, StyledText, SubContainerNumbers, TextHeader } from "../styles/style.ts";
+import { BigContainerHome, ButtonButton, ButtonYes, ContainerBigImgText, ContainerBox, ContainerBoxCard, ContainerClarifionLogo, ContainerFooter, ContainerH1, ContainerH2, ContainerHeader, ContainerHome, ContainerIMgTwo, ContainerImg, ContainerImgEnd, ContainerImgFace, ContainerImgTextEnd, ContainerInfoHome, ContainerLastText, ContainerLogos, ContainerMiniTitle, ContainerName, ContainerNortonSecureLogo, ContainerNumersTitle, ContainerNumersTitle2, ContainerPointBlueText, ContainerSectionInfo, ContainerSpace, ContainerSpanName, ContainerSpanText, ContainerSpanVerify, ContainerStar, ContainerStarSmall, ContainerSteps, ContainerStepsNumber, ContainerStyledText, ContainerSubName, ContainerSubTitle, ContainerTextEnd, ContainerTextFooter, ContainerTextRectangle, ContainerTextThreeFooter, ContainerTextTwoFooter, ContainerTextbig, ContainerTextpoint, ContainerTextred, ContainerTickText, ContainerTitle, ContainerTitleImg, ContainericonHeader, ContainericonStep, Footer, GeneralContainer, Header, ImgHome, MainContainerHome, MainContainersteps, MiniContainerIMg, MiniSectionImg, StyledText, SubContainerNumbers, TextFooterSpan, TextHeader } from "../styles/style.ts";
 import Star from "../img/svg/star.tsx";
 import PointBlue from "../img/svg/pointBlue.tsx";
 import TickCircle from "../img/svg/tickCircle.tsx";
@@ -23,6 +25,8 @@ import Master from "../img/svg/master.tsx";
 import GooglePay from "../img/svg/GooglePay.tsx";
 import IphonePay from "../img/svg/iphonePay.tsx";
 import Amex from "../img/svg/amex.tsx";
+import StarSmall from "../img/svg/startSmall.tsx";
+import CheckVerify from "../img/svg/checkVerify.tsx";
 
 function Home() {
   return (
@@ -87,8 +91,8 @@ function Home() {
           </ContainerSteps>
 
           <ContainerSteps>
-            <ContainericonStep>
-              <CircleBlue />
+            <ContainericonStep >
+              <CircleBlue/>
             </ContainericonStep>
             <ContainerStepsNumber>
               <span>Step 3 : Special Offer</span>
@@ -107,7 +111,28 @@ function Home() {
 
           <div style={{display: 'flex', justifyContent: 'center'}}>
             <BigContainerHome>
-              <ContainerImg><ImgHome src={image4} /></ContainerImg>
+              <ContainerBigImgText>
+                <ContainerImg><ImgHome src={image4} /></ContainerImg>
+                
+                <ContainerLastText>
+                  <ContainerImgFace src={Rectangle}></ContainerImgFace>
+                  <ContainerSubName>
+                    <ContainerStarSmall>
+                      <StarSmall />
+                  </ContainerStarSmall>
+                    <ContainerName>
+                      <ContainerSpanName>Ken T.</ContainerSpanName>
+                      <CheckVerify />
+                      <ContainerSpanVerify>Verified Customer</ContainerSpanVerify>
+                    </ContainerName>
+                    <ContainerTextRectangle>
+                      “As soon as the Clarifions arrived I put one in my bedroom. This was late in the afternoon. When I went to the bedroom in the evening it smelled clean. When I went to bed I felt I could breathe better. Wonderful.”
+                    </ContainerTextRectangle>
+                  </ContainerSubName>
+                </ContainerLastText>
+
+              </ContainerBigImgText>
+
               <ContainerInfoHome>
                 <ContainerTitleImg>
                   ONE TIME ONLY <span>special price for 6 extra Clarifion for only</span> $14 each <span>($84.00 total!)</span>
@@ -182,7 +207,15 @@ function Home() {
                       <Amex />
                     </ContainerBox>
                   </ContainerBoxCard>
-                
+
+                  <ContainerTextred>No thanks, I don’t want this.</ContainerTextred>
+
+                  <ContainerImgTextEnd>
+                    <ContainerImgEnd src={image6}></ContainerImgEnd>
+                    <ContainerTextEnd>
+                      If you are not completely thrilled with your Clarifion - <span>We have a 30 day satisfaction guarantee.</span> Please refer to our return policy at the bottom of the page for more details. Happy Shopping!
+                    </ContainerTextEnd>
+                  </ContainerImgTextEnd>
               </ContainerInfoHome>
             </BigContainerHome>
 
@@ -191,7 +224,19 @@ function Home() {
       </MainContainerHome>
 
       <ContainerFooter>
-        <Footer>chauuuuuu</Footer>
+        <Footer>
+        <ContainerTextFooter>
+            <ContainerTextTwoFooter>
+              <TextFooterSpan>Copyright (c) 2023</TextFooterSpan>
+              <span>|</span>
+              <TextFooterSpan>Clarifionsupport@clarifion.com</TextFooterSpan>
+            </ContainerTextTwoFooter>
+            <ContainerTextThreeFooter>
+              <Lock />
+              <TextFooterSpan>Secure 256-bit SSL encryption.</TextFooterSpan>
+            </ContainerTextThreeFooter>
+          </ContainerTextFooter>
+        </Footer>
       </ContainerFooter>
     </GeneralContainer>
   );
