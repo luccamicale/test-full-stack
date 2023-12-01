@@ -10,11 +10,19 @@ import SecureLogo from "../img/svg/secureLogo.tsx";
 import TruckHeader from "../img/svg/truck.tsx";
 import image4 from '../img/image4.png';
 import imagepreview from '../img/imagepreview.png';
-import { BigContainerHome, ButtonButton, ButtonYes, ContainerBoxCard, ContainerClarifionLogo, ContainerFooter, ContainerH1, ContainerH2, ContainerHeader, ContainerHome, ContainerIMgTwo, ContainerImg, ContainerInfoHome, ContainerLogos, ContainerMiniTitle, ContainerNortonSecureLogo, ContainerNumersTitle, ContainerNumersTitle2, ContainerPointBlueText, ContainerSectionInfo, ContainerSpanText, ContainerStar, ContainerSteps, ContainerStepsNumber, ContainerStyledText, ContainerSubTitle, ContainerTextbig, ContainerTextpoint, ContainerTickText, ContainerTitle, ContainerTitleImg, ContainericonHeader, ContainericonStep, Footer, GeneralContainer, Header, ImgHome, MainContainerHome, MainContainersteps, MiniContainerIMg, MiniSectionImg, StyledText, SubContainerNumbers, TextHeader } from "../styles/style.ts";
+import { BigContainerHome, ButtonButton, ButtonYes, ContainerBox, ContainerBoxCard, ContainerClarifionLogo, ContainerFooter, ContainerH1, ContainerH2, ContainerHeader, ContainerHome, ContainerIMgTwo, ContainerImg, ContainerInfoHome, ContainerLogos, ContainerMiniTitle, ContainerNortonSecureLogo, ContainerNumersTitle, ContainerNumersTitle2, ContainerPointBlueText, ContainerSectionInfo, ContainerSpace, ContainerSpanText, ContainerStar, ContainerSteps, ContainerStepsNumber, ContainerStyledText, ContainerSubTitle, ContainerTextbig, ContainerTextpoint, ContainerTickText, ContainerTitle, ContainerTitleImg, ContainericonHeader, ContainericonStep, Footer, GeneralContainer, Header, ImgHome, MainContainerHome, MainContainersteps, MiniContainerIMg, MiniSectionImg, StyledText, SubContainerNumbers, TextHeader } from "../styles/style.ts";
 import Star from "../img/svg/star.tsx";
 import PointBlue from "../img/svg/pointBlue.tsx";
 import TickCircle from "../img/svg/tickCircle.tsx";
 import Porcentage from "../img/svg/porcentage.tsx";
+import Lock from "../img/svg/lock.tsx";
+import Visa from "../img/svg/visa.tsx";
+import PersonalPay from "../img/svg/personal.tsx";
+import Paypal from "../img/svg/paypaal.tsx";
+import Master from "../img/svg/master.tsx";
+import GooglePay from "../img/svg/GooglePay.tsx";
+import IphonePay from "../img/svg/iphonePay.tsx";
+import Amex from "../img/svg/amex.tsx";
 
 function Home() {
   return (
@@ -155,7 +163,24 @@ function Home() {
                   </ButtonYes>
 
                   <ContainerBoxCard>
-                    hola
+                    <ContainerBox>
+                      Free Shipping
+                    </ContainerBox>
+                    <ContainerSpace>|</ContainerSpace>
+                    <ContainerBox>
+                      <Lock />
+                      Secure 256-bit SSL encryption.
+                    </ContainerBox>
+                    <ContainerSpace>|</ContainerSpace>
+                    <ContainerBox>
+                      <Visa />
+                      <PersonalPay />
+                      <Paypal />
+                      <Master />
+                      <GooglePay />
+                      <IphonePay />
+                      <Amex />
+                    </ContainerBox>
                   </ContainerBoxCard>
                 
               </ContainerInfoHome>

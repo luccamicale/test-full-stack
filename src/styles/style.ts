@@ -49,6 +49,7 @@ export const ContainericonHeader = styled.div`
   flex-direction: row;
   gap: 5px;
   margin-top: 5px;
+  align-items: center;
 `;
 
 export const TextHeader = styled.p`
@@ -367,4 +368,22 @@ gap: 16px;
 align-self: stretch;
 border-radius: 4px;
 border: 1px solid #CFCFCF;
+margin-top: 3%;
+width: 86%;
+`;
+
+export const ContainerBox = styled.div`
+  color: #4D5254;
+font-family: Manrope;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 16.8px */
+text-transform: capitalize;
+align-items: center;
+`;
+
+export const ContainerSpace = styled.div`
+  width: 8px;
+height: 24px;
 `;
