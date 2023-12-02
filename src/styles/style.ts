@@ -318,7 +318,7 @@ text-decoration-line: strikethrough;
 text-transform: capitalize;
 
 @media (max-width: 740px) {
-    font-size: 14px;
+    font-size: 10px;
   }
 `;
 
@@ -330,6 +330,11 @@ font-style: normal;
 font-weight: 600;
 line-height: 140%; /* 30.8px */
 text-transform: capitalize;
+margin-left: 10%;
+
+@media (max-width: 740px){
+  margin-left: 10%;
+}
 
 @media (max-width: 740px) {
     font-size: 14px;
@@ -477,6 +482,11 @@ border-radius: 4px;
 border: 1px solid #CFCFCF;
 margin-top: 3%;
 width: 86%;
+
+@media (max-width: 740px) {
+  display: flex;
+  flex-wrap: wrap;
+}
 `;
 
 export const ContainerBox = styled.div`
@@ -493,6 +503,15 @@ align-items: center;
 export const ContainerSpace = styled.div`
   width: 8px;
 height: 24px;
+`;
+
+export const ContainerSpace2 = styled.div`
+  width: 8px;
+height: 24px;
+
+@media (max-width: 740px) {
+  display: none;
+}
 `;
 
 export const ContainerTextred = styled.div`
