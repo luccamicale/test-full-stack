@@ -208,7 +208,7 @@ export const BigContainerHome = styled.div`
 border-radius: 10px;
 background: #FAFAFA;
 width: 92%;
-height: 79px;
+height: 879px;
 display: flex;
 flex-direction: row;
 margin-top: 3%;
@@ -220,7 +220,7 @@ gap: 1%;
 `;
 
 export const ImgHome = styled.img`
-  width: 575px;
+  width: 625px;
 height: 591px;
 display: flex;
 margin-top: 6%;
@@ -570,14 +570,14 @@ export const ContainerBigImgText = styled.div`
 
 export const ContainerLastText = styled.div`
   display: flex;
-width: 575px;
+width: 525px;
 padding: 24px;
 align-items: flex-start;
 gap: 18px;
 border-radius: 10px;
 background: #FFF;
 margin-left: 5%;
-width: 85%;
+width: 80%;
 margin-top: 5%;
 
 @media (max-width: 740px) {
