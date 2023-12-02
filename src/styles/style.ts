@@ -208,11 +208,15 @@ export const BigContainerHome = styled.div`
 border-radius: 10px;
 background: #FAFAFA;
 width: 92%;
-height: 879px;
+height: 79px;
 display: flex;
 flex-direction: row;
 margin-top: 3%;
 gap: 1%;
+
+@media (max-width: 740px) {
+  height: 979px;
+}
 `;
 
 export const ImgHome = styled.img`
@@ -353,6 +357,7 @@ export const ContainerStar = styled.div`
 export const ContainerPointBlueText = styled.div`
   display: flex;
   margin-top: 2%;
+  gap: 12px;
 `;
 
 export const ContainerTextpoint = styled.span`
@@ -675,6 +680,7 @@ export const ContainerIconHeaderMobile = styled.div`
     display: flex;
     margin-top: 5px;
   align-items: center;
+  gap: 30px;
   }
   
 `;
@@ -682,4 +688,10 @@ export const ContainerIconHeaderMobile = styled.div`
 export const ContainerMainSectionClarifion = styled.div`
 display: flex;
 gap: 10%;
+`;
+
+export const ContainerCheckTextHeader = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
 `;

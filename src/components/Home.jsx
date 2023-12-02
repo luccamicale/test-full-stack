@@ -12,7 +12,7 @@ import image4 from '../img/image4.png';
 import image6 from '../img/image6.png';
 import Rectangle from '../img/Rectangle.png';
 import imagepreview from '../img/imagepreview.png';
-import { BigContainerHome, ButtonButton, ButtonYes, ContainerBigImgText, ContainerBox, ContainerBoxCard, ContainerClarifionLogo, ContainerFooter, ContainerH1, ContainerH2, ContainerHeader, ContainerHome, ContainerIMgTwo, ContainerIconHeaderMobile, ContainerImg, ContainerImgEnd, ContainerImgFace, ContainerImgTextEnd, ContainerInfoHome, ContainerLastText, ContainerLogos, ContainerMainSectionClarifion, ContainerMiniTitle, ContainerName, ContainerNortonSecureLogo, ContainerNumersTitle, ContainerNumersTitle2, ContainerPointBlueText, ContainerSectionInfo, ContainerSpace, ContainerSpace2, ContainerSpanName, ContainerSpanText, ContainerSpanVerify, ContainerStar, ContainerStarSmall, ContainerSteps, ContainerStepsNumber, ContainerStyledText, ContainerSubName, ContainerSubTitle, ContainerTextEnd, ContainerTextFooter, ContainerTextRectangle, ContainerTextThreeFooter, ContainerTextTwoFooter, ContainerTextbig, ContainerTextpoint, ContainerTextred, ContainerTickText, ContainerTitle, ContainerTitleImg, ContainericonHeader, ContainericonStep, Footer, GeneralContainer, Header, ImgHome, MainContainerHome, MainContainersteps, MiniContainerIMg, MiniSectionImg, StyledText, SubContainerNumbers, TextFooterSpan, TextHeader } from "../styles/style.ts";
+import { BigContainerHome, ButtonButton, ButtonYes, ContainerBigImgText, ContainerBox, ContainerBoxCard, ContainerCheckTextHeader, ContainerClarifionLogo, ContainerFooter, ContainerH1, ContainerH2, ContainerHeader, ContainerHome, ContainerIMgTwo, ContainerIconHeaderMobile, ContainerImg, ContainerImgEnd, ContainerImgFace, ContainerImgTextEnd, ContainerInfoHome, ContainerLastText, ContainerLogos, ContainerMainSectionClarifion, ContainerMiniTitle, ContainerName, ContainerNortonSecureLogo, ContainerNumersTitle, ContainerNumersTitle2, ContainerPointBlueText, ContainerSectionInfo, ContainerSpace, ContainerSpace2, ContainerSpanName, ContainerSpanText, ContainerSpanVerify, ContainerStar, ContainerStarSmall, ContainerSteps, ContainerStepsNumber, ContainerStyledText, ContainerSubName, ContainerSubTitle, ContainerTextEnd, ContainerTextFooter, ContainerTextRectangle, ContainerTextThreeFooter, ContainerTextTwoFooter, ContainerTextbig, ContainerTextpoint, ContainerTextred, ContainerTickText, ContainerTitle, ContainerTitleImg, ContainericonHeader, ContainericonStep, Footer, GeneralContainer, Header, ImgHome, MainContainerHome, MainContainersteps, MiniContainerIMg, MiniSectionImg, StyledText, SubContainerNumbers, TextFooterSpan, TextHeader } from "../styles/style.ts";
 import Star from "../img/svg/star.tsx";
 import PointBlue from "../img/svg/pointBlue.tsx";
 import TickCircle from "../img/svg/tickCircle.tsx";
@@ -27,6 +27,8 @@ import IphonePay from "../img/svg/iphonePay.tsx";
 import Amex from "../img/svg/amex.tsx";
 import StarSmall from "../img/svg/startSmall.tsx";
 import CheckVerify from "../img/svg/checkVerify.tsx";
+import ArrowWhite from "../img/svg/arrowWhite.tsx";
+import ArrowWhiteLeft from "../img/svg/arrowWhiteLeft.tsx";
 
 function Home() {
   return (
@@ -34,8 +36,12 @@ function Home() {
       <ContainerHeader>
         <Header>
           <ContainerIconHeaderMobile>
-            <CheckHeader />
-            <TextHeader>30-DAY SATISFACTION GUARANTEE</TextHeader>
+            <ArrowWhite />
+            <ContainerCheckTextHeader>
+              <CheckHeader />
+              <TextHeader>30-DAY SATISFACTION GUARANTEE</TextHeader>
+            </ContainerCheckTextHeader>
+            <ArrowWhiteLeft />
           </ContainerIconHeaderMobile>
           <ContainericonHeader>
             <CheckHeader />
