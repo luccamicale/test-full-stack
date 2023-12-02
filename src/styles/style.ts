@@ -215,7 +215,7 @@ margin-top: 3%;
 gap: 1%;
 
 @media (max-width: 740px) {
-  height: 979px;
+  height: 1010px;
 }
 `;
 
